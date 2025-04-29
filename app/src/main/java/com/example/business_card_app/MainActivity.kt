@@ -76,52 +76,58 @@ fun MainLayout(){
             Text(
                 text = "Android Developer Extraordinaire",
                 fontSize = 20.sp,
+                fontWeight = FontWeight.Bold,
                 color = Color(0xff25634e)
 
             )
         }
         Column(
-            modifier = Modifier.align(Alignment.BottomCenter) ,
-            horizontalAlignment = Alignment.CenterHorizontally
+            modifier = Modifier.align(Alignment.BottomCenter).padding(16.dp) ,
+//            horizontalAlignment = Alignment.CenterHorizontally,
+
+
         ) {
-            Row() {
+            Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+
                 Icon(
                    Icons.Rounded.Call,
                     contentDescription = null,
-
+                    tint = Color(0xff4a946d)
                 )
                 Text(
                     text = "+110 93203 2893829",
                     fontSize = 20.sp,
-                    color = Color(0xff25634e)
+
 
                 )
 
             }
-            Row() {
+            Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                 Icon(
                     Icons.Rounded.Share,
                     contentDescription = null,
+                    tint = Color(0xff4a946d)
 
                 )
                 Text(
-                    text = "Android Dev",
+                    text = "@Android Dev",
                     fontSize = 20.sp,
-                    color = Color(0xff25634e)
+
 
                 )
 
             }
-            Row() {
+            Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                 Icon(
                     Icons.Rounded.Email,
                     contentDescription = null,
+                    tint = Color(0xff4a946d)
 
                 )
                 Text(
                     text = "john.doe@example.com",
                     fontSize = 20.sp,
-                    color = Color(0xff25634e)
+
 
                 )
 
